@@ -14,7 +14,7 @@
 }
 .quickswitcher_ac6cb0 .input_ac6cb0 {
     height: 50px;
-	background-color: var(--bg-3);
+    margin-bottom: 25px;
 }
 .quickswitcher_ac6cb0 .input_ac6cb0[value=""] {
     border-radius: 8px;
