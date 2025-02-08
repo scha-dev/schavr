@@ -1,0 +1,203 @@
+/* QUICK SEARCH V2 FIX */
+.layer_bc663c:has(.quickswitcher_ac6cb0) {
+    justify-content: start;
+}
+.quickswitcher_ac6cb0 {
+    background: none;
+    padding: 12;
+}
+.quickswitcher_ac6cb0 .scroller_ac6cb0 {
+    margin: 0;
+    border-radius: 0 0 8px 8px;
+    scrollbar-width: none;
+    padding: 8px !important;
+}
+.quickswitcher_ac6cb0 .input_ac6cb0 {
+    height: 50px;
+	background-color: var(--bg-3);
+}
+.quickswitcher_ac6cb0 .input_ac6cb0[value=""] {
+    border-radius: 8px;
+}
+.quickswitcher_ac6cb0 .input_ac6cb0:not([value=""]) {
+    border-radius: 8px 8px 0 0;
+}
+.quickswitcher_ac6cb0 .input_ac6cb0[value=""] + .scroller_ac6cb0,
+.quickswitcher_ac6cb0 .protip_ac6cb0 {
+    display: none;
+}
+.backdrop__1a911:has(+ .layer_bc663c .quickswitcher_ac6cb0) {
+    opacity: 0;
+}
+
+
+/* Server Name Longer */
+[class^=tooltip] /* Allow the server tooltip to fit the entire server name in one line */ {
+    max-width: unset !important; /* allow it to be larger */ }
+
+
+/* Remove translate, gift, gif, sticker icon */
+button[aria-label|="Send a gift"]{
+    display:none;
+}
+button[aria-label|="Open GIF picker"]{
+    display:none;
+}
+button[aria-label|="Open sticker picker"]{
+    display:none;
+}
+button[aria-label|="Open Translate Modal"]{
+    display:none;   
+}
+
+
+/* Remove the Create Invite button from Channel Lists */
+[class^="iconVisibility_"] [aria-label="Create Invite"] {
+    display: none !important;
+}
+[class^="iconVisibility_"] [aria-label="Edit Channel"] {
+    display: none !important;
+}
+[class^="iconVisibility_"] [aria-label="Create Channel"] {
+    display: none !important;
+}
+
+/* remove the three emoji when hovering over a message */
+/* remove separator as well*/
+div[aria-label*="Message Actions"] > div > div:has( > div > div[class*="emoji"]),
+div[aria-label*="Message Actions"] > div > div[class*="separator_"]{
+    display:none;
+}
+
+/* remove app bs from images, probably language dependant? */
+div[aria-label="Edit Image with Apps"]{
+    display:none;
+}
+
+/* Remove Boost-thing in servers */
+div[data-list-item-id*="channels___boosts-"]{
+    display:none;
+}
+
+/* Remove Activities */
+[class^=nowPlayingColumn_] {
+  display: none;
+}
+
+/* remove reaction right click */
+[class^=wrapper_]:has(>#message-quickreact-697745232413982730) {
+  display: none;
+}
+[class^=wrapper_]:has(>#message-actions-quickreact-697745232413982730) {
+  display: none;
+}
+
+/* remove add status */
+[aria-label="Add custom status"] { display: none; }
+
+
+/* changes to the channel list for better usability */
+/* squish channel height/spacing */
+[class="link__2ea32"] {
+    padding-block: 3px;
+}
+
+/* remove activity members-list */
+div[aria-label*="Members"] > div > div[role="listitem"]{
+    display:none;
+}
+div[aria-label*="Members"] > h3:has(> span > div > div[role="button"]){
+    display:none;
+}
+
+/* Message shift-hover  */
+[aria-label*="Create Thread"],
+[aria-label*="Mark Unread"],
+[aria-label*="Copy Link"],
+[aria-label*="Pin Message"],
+[aria-label*="Copy Message ID"] {
+    display: none;
+}
+
+/* role colour on profile */
+.role_dfa8b6.pill_dfa8b6 {
+    position: relative;
+    background: none;
+    border: none;
+    padding-left: 28px;
+}
+
+.role_dfa8b6.pill_dfa8b6 > span {
+    z-index: 1;
+}
+
+.role_dfa8b6.pill_dfa8b6 .roleRemoveButton_dfa8b6 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: 0 !important;
+}
+
+.role_dfa8b6.pill_dfa8b6 .roleCircle__4f569 {
+    margin: 6px 8px;
+}
+
+.role_dfa8b6.pill_dfa8b6 .roleCircle__4f569::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: inherit;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    border-radius: var(--radius-xs);
+    filter: brightness(1.1);
+    opacity: 0.25;
+}
+
+/* scroll optimizations */
+[class*='scroll'] {
+	will-change: scroll-position;
+}
+
+
+/* Read All Button */
+.vc-ranb-button {
+  margin: 0 16px;
+  width: var(--guildbar-avatar-size);
+  min-height: 40px;
+  max-height: 40px !important;
+  padding: 5px;
+  background-color: var(--background-primary);
+  border: none;
+  border-radius: 12px;
+
+  .contents__201d5 {
+    font-size: 0px;
+  }
+
+.contents__201d5::after {
+    content: "asdfg";
+    font-size: 18px;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    color: transparent;
+    top: 2.5px;
+    left: 4px;
+    background-image: url("data:image/svg+xml,%3Csvg%20x%3D%220%22%20y%3D%220%22%20class%3D%22icon__9293f%22%20aria-hidden%3D%22true%22%20role%3D%22img%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23D8D8DB%22%20d%3D%22M9.7%202.89c.18-.07.32-.24.37-.43a2%202%200%200%201%203.86%200c.05.2.19.36.38.43A7%207%200%200%201%2019%209.5v2.09c0%20.12.05.24.13.33l1.1%201.22a3%203%200%200%201%20.77%202.01v.28c0%20.67-.34%201.29-.95%201.56-1.31.6-4%201.51-8.05%201.51-4.05%200-6.74-.91-8.05-1.5-.61-.28-.95-.9-.95-1.57v-.28a3%203%200%200%201%20.77-2l1.1-1.23a.5.5%200%200%200%20.13-.33V9.5a7%207%200%200%201%204.7-6.61ZM9.18%2019.84A.16.16%200%200%200%209%2020a3%203%200%201%200%206%200c0-.1-.09-.17-.18-.16a24.86%2024.86%200%200%201-5.64%200Z%22%20class%3D%22%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+  }
+
+  &:hover {
+    background-color: var(--brand-500);
+
+    .contents__201d5::after {
+      background-image: url("data:image/svg+xml,%3Csvg%20x%3D%220%22%20y%3D%220%22%20class%3D%22icon__9293f%22%20aria-hidden%3D%22true%22%20role%3D%22img%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M9.7%202.89c.18-.07.32-.24.37-.43a2%202%200%200%201%203.86%200c.05.2.19.36.38.43A7%207%200%200%201%2019%209.5v2.09c0%20.12.05.24.13.33l1.1%201.22a3%203%200%200%201%20.77%202.01v.28c0%20.67-.34%201.29-.95%201.56-1.31.6-4%201.51-8.05%201.51-4.05%200-6.74-.91-8.05-1.5-.61-.28-.95-.9-.95-1.57v-.28a3%203%200%200%201%20.77-2l1.1-1.23a.5.5%200%200%200%20.13-.33V9.5a7%207%200%200%201%204.7-6.61ZM9.18%2019.84A.16.16%200%200%200%209%2020a3%203%200%201%200%206%200c0-.1-.09-.17-.18-.16a24.86%2024.86%200%200%201-5.64%200Z%22%20class%3D%22%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+    }
+  }
+  /* turn vc read message button into a server-like */
+}
