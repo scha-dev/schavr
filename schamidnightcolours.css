@@ -194,4 +194,12 @@
 	.side_b3f026 .item_b3f026.selected_b3f026 {
 		background-color: var(--bg-2) !important;
 	}
+
+  	.newMessagesBar__0f481 {
+  	background-color: var(--accent-3);
+ 	 }
+
+	.lookFilled__201d5.colorBrand__201d5 {
+ 	background-color: var(--accent-3);
+	}
 }
