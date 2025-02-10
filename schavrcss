@@ -207,18 +207,4 @@ div[aria-label*="Members"] > div > div[role="listitem"] {
 }
 
 
-/* New Message Bar & Jump To PResent */
-.newMessagesBar__0f481 {
-  height: 32px;
-  top: 0;
-  border-radius: 0 0 8px 8px; /* Rounded corners at the bottom */
-  background-color: #820606; /* Changed to hex for easier readability */
-  box-shadow: var(--elevation-low, 0 1px 2px rgba(0, 0, 0, 0.1)); /* Added fallback for box-shadow */
-  z-index: 3; /* Keeps it above other elements */
-}
-
-.lookFilled__201d5.colorBrand__201d5 {
-    color: var(--button-filled-brand-text);
-    background-color: #820606; /* Changed to hex for easier readability */  
-}
 
