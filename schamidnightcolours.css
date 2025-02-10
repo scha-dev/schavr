@@ -202,4 +202,12 @@
 	.lookFilled__201d5.colorBrand__201d5 {
  		background-color: var(--accent-3);
 	}
+
+	.visual-refresh .barButtonAlt__0f481 {
+  		background: var(--accent-3);
+	}
+
+	.activeButton_c15210 {
+  		background: var(--accent-3);
+	}
 }
