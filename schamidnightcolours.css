@@ -34,7 +34,7 @@
 .visual-refresh.theme-dark,
 .visual-refresh .theme-dark {
 	--activity-card-background: red;
-	--autocomplete-bg: red;
+	--autocomplete-bg: var(--bg-3);
 
 	--background-mentioned: var(--mention);
 	--background-mentioned-hover: var(--mention-hover);
