@@ -1,4 +1,3 @@
-
 :root {
 /* text colors */
   --text-0: rgb(189, 189, 189); /* text on colored elements */
@@ -11,15 +10,15 @@
 /* background and dark colors */
 	--bg-1: #5d5a5a; /* dark buttons when clicked */
 	--bg-2: #222222; /* dark buttons */
- 	 --bg-3: hsl(240, 3%, 12%); /* spacing, secondary elements */
+ 	--bg-3: hsl(240, 3%, 12%); /* spacing, secondary elements */
  	--bg-4: hsl(240, 2%, 8%); /* main background color */
-  	--hover: hsla(0, 0%, 21%, 0.799); /* buttons when hovered */
+  --hover: hsla(0, 0%, 21%, 0.799); /* buttons when hovered */
 	--active: hsl(0, 1%, 28%); /* channels and buttons when clicked or selected */
 	--message-hover: hsl(0, 0%, 6%); /* messages when hovered */
 
-	--border-light: hsl(0, 0%, 5%);
-	--border: hsl(0, 0%, 0%);
-	--button-border: hsla(0, 2%, 10%, 0.963);
+	--border-light: var(--bg-4);
+	--border: var(--bg-4);
+	--button-border: var(--bg-4);
 
 /* accent colors */
 	--accent-1: hsl(205, 65%, 45%); /* links */
@@ -66,7 +65,7 @@
 	--modal-footer-background: var(--bg-4);
 
 	--background-modifier-accent: var(--hover);
-	--background-modifier-active: var(--active);
+	--background-modifier-active: var(--bg-4);
 	--background-modifier-hover: var(--hover);
 	--background-modifier-selected: var(--active);
 
