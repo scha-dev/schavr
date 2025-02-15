@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@420&display=swap');
+:root {
+/* font, change to 'gg sans' for default discord font*/
+--font-primary: "Sora";
+--font-display: "Sora";
+--font-headline: "Sora";
+--font-code: "Sora";
+-font: 'Sora'
+}
+
 /* QUICK SEARCH V2 FIX */
 .layer_bc663c.has-quickswitcher {
     justify-content: start;
