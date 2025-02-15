@@ -207,4 +207,17 @@ div[aria-label*="Members"] > div > div[role="listitem"] {
 }
 
 
+/* NEW MOVE VENCORD TOOLBOX */
+.visual-refresh .toolbar__9293f .iconWrapper__9293f {
+  margin: 0;
+  order: -1;
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.visual-refresh .toolbar__9293f .iconWrapper__9293f:hover {
+  transform: scale(1.1); /* Slight enlargement on hover */
+  opacity: 0.8;
+}
+
+
 
