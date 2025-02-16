@@ -76,11 +76,10 @@ button[aria-label|="Open Translate Modal"]{
     display: none !important;
 }
 
-/* remove the three emoji when hovering over a message */
-/* remove separator as well*/
-div[aria-label*="Message Actions"] > div > div:has( > div > div[class*="emoji"]),
-div[aria-label*="Message Actions"] > div > div[class*="separator_"]{
-    display:none;
+/* Hide emoji and separator in message actions when hovering */
+div[aria-label*="Message Actions"] > div > div > div > div[class*="emoji"],
+div[aria-label*="Message Actions"] > div > div[class*="separator_"] {
+    display: none;
 }
 
 /* remove app bs from images, probably language dependant? */
