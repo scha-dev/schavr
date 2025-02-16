@@ -1,51 +1,47 @@
+/* FONT CSS SORA AOI :D */
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@420&display=swap');
 :root {
-/* font, change to 'gg sans' for default discord font*/
---font-primary: "Sora";
---font-display: "Sora";
---font-headline: "Sora";
---font-code: "Sora";
--font: 'Sora'
+  --font-primary: "Sora", sans-serif;
+  --font-display: "Sora", sans-serif;
+  --font-headline: "Sora", sans-serif;
+  --font-code: "Sora", monospace;
 }
 
 /* QUICK SEARCH V2 FIX */
 .layer_bc663c.has-quickswitcher {
-    justify-content: start;
+  justify-content: start;
 }
 
 .quickswitcher_ac6cb0 {
-    background: none;
-    padding: 12px; /* Added units */
-    margin-top: -400px ;
+  background: none;
+  padding: 12px;
+  margin-top: -400px;
 }
 
 .quickswitcher_ac6cb0 .scroller_ac6cb0 {
-    margin: 0;
-    border-radius: 0 0 8px 8px;
-    scrollbar-width: none;
-    padding: 8px !important;
+  margin: 0;
+  border-radius: 0 0 8px 8px;
+  scrollbar-width: none;
+  padding: 8px;
 }
 
 .quickswitcher_ac6cb0 .input_ac6cb0 {
-    height: 50px;
-    margin-bottom: 5px;
-}
-
-.quickswitcher_ac6cb0 .input_ac6cb0[value=""] {
-    border-radius: 8px;
+  height: 50px;
+  margin-bottom: 5px;
+  border-radius: 8px;
 }
 
 .quickswitcher_ac6cb0 .input_ac6cb0:not([value=""]) {
-    border-radius: 8px 8px 0 0;
+  border-radius: 8px 8px 0 0;
 }
 
 .quickswitcher_ac6cb0 .input_ac6cb0[value=""] + .scroller_ac6cb0,
 .quickswitcher_ac6cb0 .protip_ac6cb0 {
-    display: none;
+  display: none;
 }
 
 .backdrop__1a911.has-quickswitcher-sibling {
-    opacity: 0;
+  opacity: 0;
 }
 
 
@@ -103,10 +99,19 @@ div[data-list-item-id*="channels___boosts-"]{
   display: none;
 }
 
-/* remove reaction right click */
-[class^=wrapper_]:has(>#message-quickreact-697745232413982730) {
-  display: none;
+/* Remove Reaction Right-Click Menu */
+[id^="message-quickreact-"] {
+  display: none !important;
 }
+
+/* Remove any leftover empty space */
+[id^="message-quickreact-"] {
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+
 
 /* remove add status */
 [aria-label="Add custom status"] { display: none; }
@@ -115,7 +120,7 @@ div[data-list-item-id*="channels___boosts-"]{
 /* changes to the channel list for better usability */
 /* squish channel height/spacing */
 [class="link__2ea32"] {
-    padding-block: 3px;
+    padding-block: 2px;
 }
 
 /* remove activity members-list */
@@ -182,38 +187,37 @@ div[aria-label*="Members"] > div > div[role="listitem"] {
   margin: 0 16px;
   width: var(--guildbar-avatar-size);
   min-height: 40px;
-  max-height: 40px !important;
+  max-height: 40px;
   left: -5px;
   padding: 5px;
   background-color: var(--bg-overlay-2);
   border: none;
   border-radius: 12px;
+}
 
-  .contents__201d5 {
-    font-size: 0px;
-  }
+.vc-ranb-button .contents__201d5 {
+  font-size: 0;
+}
 
-.contents__201d5::after {
-    content: "asdfg";
-    font-size: 18px;
-    width: 16px;
-    height: 16px;
-    position: relative;
-    color: transparent;
-    top: 2.5px;
-    left: 4px;
-    background-image: url("data:image/svg+xml,%3Csvg%20x%3D%220%22%20y%3D%220%22%20class%3D%22icon__9293f%22%20aria-hidden%3D%22true%22%20role%3D%22img%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22hsl(0%2C%202%25%2C%2064%25)%22%20d%3D%22M9.7%202.89c.18-.07.32-.24.37-.43a2%202%200%200%201%203.86%200c.05.2.19.36.38.43A7%207%200%200%201%2019%209.5v2.09c0%20.12.05.24.13.33l1.1%201.22a3%203%200%200%201%20.77%202.01v.28c0%20.67-.34%201.29-.95%201.56-1.31.6-4%201.51-8.05%201.51-4.05%200-6.74-.91-8.05-1.5-.61-.28-.95-.9-.95-1.57v-.28a3%203%200%200%201%20.77-2l1.1-1.23a.5.5%200%200%200%20.13-.33V9.5a7%207%200%200%201%204.7-6.61ZM9.18%2019.84A.16.16%200%200%200%209%2020a3%203%200%201%200%206%200c0-.1-.09-.17-.18-.16a24.86%2024.86%200%200%201-5.64%200Z%22%20class%3D%22%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
-    background-repeat: no-repeat;
-  }
+.vc-ranb-button .contents__201d5::after {
+  content: "asdfg";
+  font-size: 20px;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  color: transparent;
+  top: 2.5px;
+  left: 4px;
+  background-image: url("data:image/svg+xml,%3Csvg%20x%3D%220%22%20y%3D%220%22%20class%3D%22icon__9293f%22%20aria-hidden%3D%22true%22%20role%3D%22img%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22hsl(0%2C%202%25%2C%2064%25)%22%20d%3D%22M9.7%202.89c.18-.07.32-.24.37-.43a2%202%200%200%201%203.86%200c.05.2.19.36.38.43A7%207%200%200%201%2019%209.5v2.09c0%20.12.05.24.13.33l1.1%201.22a3%203%200%200%201%20.77%202.01v.28c0%20.67-.34%201.29-.95%201.56-1.31.6-4%201.51-8.05%201.51-4.05%200-6.74-.91-8.05-1.5-.61-.28-.95-.9-.95-1.57v-.28a3%203%200%200%201%20.77-2l1.1-1.23a.5.5%200%200%200%20.13-.33V9.5a7%207%200%200%201%204.7-6.61ZM9.18%2019.84A.16.16%200%200%200%209%2020a3%203%200%201%200%206%200c0-.1-.09-.17-.18-.16a24.86%2024.86%200%200%201-5.64%200Z%22%20class%3D%22%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+}
 
-  &:hover {
-    background-color: var(--accent-3);
+.vc-ranb-button:hover {
+  background-color: var(--accent-3);
+}
 
-    .contents__201d5::after {
-      background-image: url("data:image/svg+xml,%3Csvg%20x%3D%220%22%20y%3D%220%22%20class%3D%22icon__9293f%22%20aria-hidden%3D%22true%22%20role%3D%22img%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23000000%22%20d%3D%22M9.7%202.89c.18-.07.32-.24.37-.43a2%202%200%200%201%203.86%200c.05.2.19.36.38.43A7%207%200%200%201%2019%209.5v2.09c0%20.12.05.24.13.33l1.1%201.22a3%203%200%200%201%20.77%202.01v.28c0%20.67-.34%201.29-.95%201.56-1.31.6-4%201.51-8.05%201.51-4.05%200-6.74-.91-8.05-1.5-.61-.28-.95-.9-.95-1.57v-.28a3%203%200%200%201%20.77-2l1.1-1.23a.5.5%200%200%200%20.13-.33V9.5a7%207%200%200%201%204.7-6.61ZM9.18%2019.84A.16.16%200%200%200%209%2020a3%203%200%201%200%206%200c0-.1-.09-.17-.18-.16a24.86%2024.86%200%200%201-5.64%200Z%22%20class%3D%22%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
-    }
-  }
-  /* turn vc read message button into a server-like */
+.vc-ranb-button:hover .contents__201d5::after {
+  background-image: url("data:image/svg+xml,%3Csvg%20x%3D%220%22%20y%3D%220%22%20class%3D%22icon__9293f%22%20aria-hidden%3D%22true%22%20role%3D%22img%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23000000%22%20d%3D%22M9.7%202.89c.18-.07.32-.24.37-.43a2%202%200%200%201%203.86%200c.05.2.19.36.38.43A7%207%200%200%201%2019%209.5v2.09c0%20.12.05.24.13.33l1.1%201.22a3%203%200%200%201%20.77%202.01v.28c0%20.67-.34%201.29-.95%201.56-1.31.6-4%201.51-8.05%201.51-4.05%200-6.74-.91-8.05-1.5-.61-.28-.95-.9-.95-1.57v-.28a3%203%200%200%201%20.77-2l1.1-1.23a.5.5%200%200%200%20.13-.33V9.5a7%207%200%200%201%204.7-6.61ZM9.18%2019.84A.16.16%200%200%200%209%2020a3%203%200%201%200%206%200c0-.1-.09-.17-.18-.16a24.86%2024.86%200%200%201-5.64%200Z%22%20class%3D%22%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
 }
 
 
@@ -228,6 +232,3 @@ div[aria-label*="Members"] > div > div[role="listitem"] {
   transform: scale(1.1); /* Slight enlargement on hover */
   opacity: 0.8;
 }
-
-
-
