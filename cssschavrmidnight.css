@@ -232,8 +232,67 @@ div[aria-label*="Members"] > div > div[role="listitem"] {
 
 
 /* =====================================================
+  🔻 MOVE "READ ALL" BUTTON TO BOTTOM
+===================================================== */
+.sidebar__container {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.vc-ranb-button {
+  order: 9 !important; /* Moves it to the bottom */
+  margin-top: auto !important; /* Pushes it down */
+}
+
+
+/* =====================================================
    🎭 SEARCH BAR
 ===================================================== */
 .icon_fea832.visible_fea832 {
     color: var(--text-2);
 }
+
+/* =====================================================
+  📌 CHANNEL OUTLINES & HIGHLIGHTED ICONS
+===================================================== */
+#app-mount .containerDefault_c69b6d .selected_c69b6d .wrapper__2ea32 .link__2ea32 {
+  background: var(--bg-3);
+  border-radius: 5px;
+  margin-left: 5px;
+  transition: background 0.2s ease-in-out;
+}
+
+.unread__2ea32 {
+  width: 3px;
+  border-radius: 20px;
+  background-color: rgba(128, 211, 239, 0.657);
+  margin-left: 3px;
+}
+
+
+/* =====================================================
+  📌 PIN PAGE SWITCHER
+===================================================== */
+[class^="container_"]:has([class^="pageControlContainer_"]) {
+  position: sticky;
+  bottom: 8px;
+  border-radius: 10px;
+  z-index: 999;
+  background: var(--bg-overlay-1, var(--background-secondary));
+}
+
+
+/* =====================================================
+  🏠 HOME ICON WITH TRANSITION EFFECT
+===================================================== */
+[data-list-item-id="guildsnav___home"] {
+    content: url(https://files.catbox.moe/0lk285.png?size=256&quality=lossless);
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Add transition for scaling and opacity */
+}
+
+[data-list-item-id="guildsnav___home"]:hover {
+    background-color: var(--accent-3);
+    transform: scale(1.1); /* Slightly increase size when hovered */
+    opacity: 0.8; /* Fade slightly when hovered */
+}
+
