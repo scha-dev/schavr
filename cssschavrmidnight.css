@@ -1,6 +1,4 @@
-/* =====================================================
-   🌟 FONT SETTINGS – SORA AOI
-===================================================== */
+/* 🎭 FONT SETTINGS – SORA AOI 🎭 */
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@420&display=swap');
 :root {
   --font-primary: "Sora", sans-serif;
@@ -9,12 +7,32 @@
   --font-code: "Sora", monospace;
 }
 
-/* =====================================================
-   🏷️ TEXT & TOOLTIP FIXES
-===================================================== */
+/* 🔴 SOME CSS, CHANGE & FIX 🔴 */
 /* Server Name Tooltip – Allow full server name in one line */
 [class^=tooltip] {
     max-width: unset !important;
+}
+
+/* SCROLL OPTIMIZATION */
+[class*='scroll'] {
+    will-change: scroll-position;
+}
+
+/* SEARCH BAR */
+.icon_fea832.visible_fea832 {
+    color: var(--text-2);
+}
+
+/* MOVE VENCORD TOOLBOX */
+.visual-refresh .toolbar__9293f .iconWrapper__9293f {
+  margin: 0;
+  order: -1;
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.visual-refresh .toolbar__9293f .iconWrapper__9293f:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
 }
 
 /* Role color on profile */
@@ -56,9 +74,7 @@
     opacity: 0.25;
 }
 
-/* =====================================================
-   🔎 QUICK SWITCHER FIXES
-===================================================== */
+/* QUICK SWITCHER FIXES */
 .layer_bc663c:has(.quickswitcher_ac6cb0) {
     justify-content: start;
 }
@@ -89,9 +105,103 @@
     opacity: 0;
 }
 
-/* =====================================================
-   🔧 UI CLEANUP – REMOVE UNWANTED ELEMENTS
-===================================================== */
+
+/* 🟠 CHANNEL LIST & MESSAGE ACTIONS 🟠 */
+/* Reduce Channel List Spacing */
+[class="link__2ea32"] {
+    padding-block: 2px;
+}
+
+/* CHANNEL OUTLINES & HIGHLIGHTED ICONS */
+#app-mount .containerDefault_c69b6d .selected_c69b6d .wrapper__2ea32 .link__2ea32 {
+  background: var(--bg-3);
+  border-radius: 5px;
+  margin-left: 5px;
+  transition: background 0.2s ease-in-out;
+}
+
+.unread__2ea32 {
+  width: 3px;
+  border-radius: 20px;
+  background-color: rgba(128, 211, 239, 0.657);
+  margin-left: 3px;
+}
+
+/* 🏠 HOME ICON WITH TRANSITION EFFECT 🏠 */
+[data-list-item-id="guildsnav___home"] {
+    content: url(https://files.catbox.moe/0lk285.png?size=256&quality=lossless);
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Add transition for scaling and opacity */
+}
+
+[data-list-item-id="guildsnav___home"]:hover {
+    background-color: var(--accent-3);
+    transform: scale(1.1); /* Slightly increase size when hovered */
+    opacity: 0.8; /* Fade slightly when hovered */
+}
+
+
+/* 🟡 "READ ALL" BUTTON MODIFICATIONS 🟡 */
+/* Read All Button */
+.vc-ranb-button {
+  margin: 0 18px;
+  width: var(--guildbar-avatar-size);
+  min-height: 40px;
+  max-height: 40px;
+  left: -5px;
+  padding: 5px;
+  background-color: var(--bg-overlay-2);
+  border: none;
+  border-radius: 12px;
+}
+
+.vc-ranb-button .contents__201d5 {
+  font-size: 0;
+}
+
+.vc-ranb-button .contents__201d5::after {
+  content: "asdfg";
+  font-size: 18px;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  color: transparent;
+  top: 2.5px;
+  left: 4px;
+  background-image: url("data:image/svg+xml,%3Csvg%20x%3D%220%22%20y%3D%220%22%20class%3D%22icon__9293f%22%20aria-hidden%3D%22true%22%20role%3D%22img%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22hsl(0%2C%202%25%2C%2064%25)%22%20d%3D%22M9.7%202.89c.18-.07.32-.24.37-.43a2%202%200%200%201%203.86%200c.05.2.19.36.38.43A7%207%200%200%201%2019%209.5v2.09c0%20.12.05.24.13.33l1.1%201.22a3%203%200%200%201%20.77%202.01v.28c0%20.67-.34%201.29-.95%201.56-1.31.6-4%201.51-8.05%201.51-4.05%200-6.74-.91-8.05-1.5-.61-.28-.95-.9-.95-1.57v-.28a3%203%200%200%201%20.77-2l1.1-1.23a.5.5%200%200%200%20.13-.33V9.5a7%207%200%200%201%204.7-6.61ZM9.18%2019.84A.16.16%200%200%200%209%2020a3%203%200%201%200%206%200c0-.1-.09-.17-.18-.16a24.86%2024.86%200%200%201-5.64%200Z%22%20class%3D%22%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+}
+
+.vc-ranb-button:hover {
+  background-color: var(--accent-3);
+}
+
+.vc-ranb-button:hover .contents__201d5::after {
+  background-image: url("data:image/svg+xml,%3Csvg%20x%3D%220%22%20y%3D%220%22%20class%3D%22icon__9293f%22%20aria-hidden%3D%22true%22%20role%3D%22img%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23000000%22%20d%3D%22M9.7%202.89c.18-.07.32-.24.37-.43a2%202%200%200%201%203.86%200c.05.2.19.36.38.43A7%207%200%200%201%2019%209.5v2.09c0%20.12.05.24.13.33l1.1%201.22a3%203%200%200%201%20.77%202.01v.28c0%20.67-.34%201.29-.95%201.56-1.31.6-4%201.51-8.05%201.51-4.05%200-6.74-.91-8.05-1.5-.61-.28-.95-.9-.95-1.57v-.28a3%203%200%200%201%20.77-2l1.1-1.23a.5.5%200%200%200%20.13-.33V9.5a7%207%200%200%201%204.7-6.61ZM9.18%2019.84A.16.16%200%200%200%209%2020a3%203%200%201%200%206%200c0-.1-.09-.17-.18-.16a24.86%2024.86%200%200%201-5.64%200Z%22%20class%3D%22%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+}
+
+/* MOVE "READ ALL" BUTTON TO BOTTOM */
+.sidebar__container {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.vc-ranb-button {
+  order: 9 !important; /* Moves it to the bottom */
+  margin-top: auto !important; /* Pushes it down */
+}
+
+
+/* PIN PAGE SWITCHER */
+[class^="container_"]:has([class^="pageControlContainer_"]) {
+  position: sticky;
+  bottom: 8px;
+  border-radius: 10px;
+  z-index: 999;
+  background: var(--bg-overlay-1, var(--background-secondary));
+}
+
+
+/* 📌 UI CLEANUP – REMOVE UNWANTED ELEMENTS 📌*/
 /* Remove unnecessary buttons */
 button[aria-label|="Send a gift"],
 button[aria-label|="Open GIF picker"],
@@ -151,14 +261,6 @@ div[aria-label*="Members"] > div > div[role="listitem"] {
     display: none;
 }
 
-/* =====================================================
-   📜 CHANNEL LIST & MESSAGE ACTIONS
-===================================================== */
-/* Reduce Channel List Spacing */
-[class="link__2ea32"] {
-    padding-block: 2px;
-}
-
 /* Remove Certain Message Actions */
 [aria-label*="Create Thread"],
 [aria-label*="Mark Unread"],
@@ -167,132 +269,3 @@ div[aria-label*="Members"] > div > div[role="listitem"] {
 [aria-label*="Copy Message ID"] {
     display: none;
 }
-
-/* =====================================================
-   🔄 SCROLL OPTIMIZATION
-===================================================== */
-[class*='scroll'] {
-    will-change: scroll-position;
-}
-
-/* =====================================================
-   🎛️ MOVE VENCORD TOOLBOX
-===================================================== */
-.visual-refresh .toolbar__9293f .iconWrapper__9293f {
-  margin: 0;
-  order: -1;
-  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
-}
-
-.visual-refresh .toolbar__9293f .iconWrapper__9293f:hover {
-  transform: scale(1.1);
-  opacity: 0.8;
-}
-
-/* =====================================================
-   ✅ "READ ALL" BUTTON MODIFICATIONS
-===================================================== */
-/* Read All Button */
-.vc-ranb-button {
-  margin: 0 18px;
-  width: var(--guildbar-avatar-size);
-  min-height: 40px;
-  max-height: 40px;
-  left: -5px;
-  padding: 5px;
-  background-color: var(--bg-overlay-2);
-  border: none;
-  border-radius: 12px;
-}
-
-.vc-ranb-button .contents__201d5 {
-  font-size: 0;
-}
-
-.vc-ranb-button .contents__201d5::after {
-  content: "asdfg";
-  font-size: 18px;
-  width: 16px;
-  height: 16px;
-  position: relative;
-  color: transparent;
-  top: 2.5px;
-  left: 4px;
-  background-image: url("data:image/svg+xml,%3Csvg%20x%3D%220%22%20y%3D%220%22%20class%3D%22icon__9293f%22%20aria-hidden%3D%22true%22%20role%3D%22img%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22hsl(0%2C%202%25%2C%2064%25)%22%20d%3D%22M9.7%202.89c.18-.07.32-.24.37-.43a2%202%200%200%201%203.86%200c.05.2.19.36.38.43A7%207%200%200%201%2019%209.5v2.09c0%20.12.05.24.13.33l1.1%201.22a3%203%200%200%201%20.77%202.01v.28c0%20.67-.34%201.29-.95%201.56-1.31.6-4%201.51-8.05%201.51-4.05%200-6.74-.91-8.05-1.5-.61-.28-.95-.9-.95-1.57v-.28a3%203%200%200%201%20.77-2l1.1-1.23a.5.5%200%200%200%20.13-.33V9.5a7%207%200%200%201%204.7-6.61ZM9.18%2019.84A.16.16%200%200%200%209%2020a3%203%200%201%200%206%200c0-.1-.09-.17-.18-.16a24.86%2024.86%200%200%201-5.64%200Z%22%20class%3D%22%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
-  background-repeat: no-repeat;
-}
-
-.vc-ranb-button:hover {
-  background-color: var(--accent-3);
-}
-
-.vc-ranb-button:hover .contents__201d5::after {
-  background-image: url("data:image/svg+xml,%3Csvg%20x%3D%220%22%20y%3D%220%22%20class%3D%22icon__9293f%22%20aria-hidden%3D%22true%22%20role%3D%22img%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23000000%22%20d%3D%22M9.7%202.89c.18-.07.32-.24.37-.43a2%202%200%200%201%203.86%200c.05.2.19.36.38.43A7%207%200%200%201%2019%209.5v2.09c0%20.12.05.24.13.33l1.1%201.22a3%203%200%200%201%20.77%202.01v.28c0%20.67-.34%201.29-.95%201.56-1.31.6-4%201.51-8.05%201.51-4.05%200-6.74-.91-8.05-1.5-.61-.28-.95-.9-.95-1.57v-.28a3%203%200%200%201%20.77-2l1.1-1.23a.5.5%200%200%200%20.13-.33V9.5a7%207%200%200%201%204.7-6.61ZM9.18%2019.84A.16.16%200%200%200%209%2020a3%203%200%201%200%206%200c0-.1-.09-.17-.18-.16a24.86%2024.86%200%200%201-5.64%200Z%22%20class%3D%22%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
-}
-
-
-/* =====================================================
-  🔻 MOVE "READ ALL" BUTTON TO BOTTOM
-===================================================== */
-.sidebar__container {
-  display: flex !important;
-  flex-direction: column !important;
-}
-
-.vc-ranb-button {
-  order: 9 !important; /* Moves it to the bottom */
-  margin-top: auto !important; /* Pushes it down */
-}
-
-
-/* =====================================================
-   🎭 SEARCH BAR
-===================================================== */
-.icon_fea832.visible_fea832 {
-    color: var(--text-2);
-}
-
-/* =====================================================
-  📌 CHANNEL OUTLINES & HIGHLIGHTED ICONS
-===================================================== */
-#app-mount .containerDefault_c69b6d .selected_c69b6d .wrapper__2ea32 .link__2ea32 {
-  background: var(--bg-3);
-  border-radius: 5px;
-  margin-left: 5px;
-  transition: background 0.2s ease-in-out;
-}
-
-.unread__2ea32 {
-  width: 3px;
-  border-radius: 20px;
-  background-color: rgba(128, 211, 239, 0.657);
-  margin-left: 3px;
-}
-
-
-/* =====================================================
-  📌 PIN PAGE SWITCHER
-===================================================== */
-[class^="container_"]:has([class^="pageControlContainer_"]) {
-  position: sticky;
-  bottom: 8px;
-  border-radius: 10px;
-  z-index: 999;
-  background: var(--bg-overlay-1, var(--background-secondary));
-}
-
-
-/* =====================================================
-  🏠 HOME ICON WITH TRANSITION EFFECT
-===================================================== */
-[data-list-item-id="guildsnav___home"] {
-    content: url(https://files.catbox.moe/0lk285.png?size=256&quality=lossless);
-    transition: transform 0.3s ease, opacity 0.3s ease; /* Add transition for scaling and opacity */
-}
-
-[data-list-item-id="guildsnav___home"]:hover {
-    background-color: var(--accent-3);
-    transform: scale(1.1); /* Slightly increase size when hovered */
-    opacity: 0.8; /* Fade slightly when hovered */
-}
-
