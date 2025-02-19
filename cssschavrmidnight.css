@@ -127,18 +127,6 @@
   margin-left: 3px;
 }
 
-/* 🏠 HOME ICON WITH TRANSITION EFFECT 🏠 */
-[data-list-item-id="guildsnav___home"] {
-    content: url(https://files.catbox.moe/0lk285.png?size=256&quality=lossless);
-    transition: transform 0.3s ease, opacity 0.3s ease; /* Add transition for scaling and opacity */
-}
-
-[data-list-item-id="guildsnav___home"]:hover {
-    background-color: var(--accent-3);
-    transform: scale(1.1); /* Slightly increase size when hovered */
-    opacity: 0.8; /* Fade slightly when hovered */
-}
-
 
 /* 🟡 "READ ALL" BUTTON MODIFICATIONS 🟡 */
 /* Read All Button */
