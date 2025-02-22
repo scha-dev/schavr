@@ -128,6 +128,11 @@
 }
 
 
+/* background coloyr button +server, discover, download */
+.circleIconButton__5bc7e {
+  background-color: var(--bg-mod-strong);
+}
+
 /* 🟡 "READ ALL" BUTTON MODIFICATIONS 🟡 */
 /* Read All Button */
 .vc-ranb-button {
@@ -137,7 +142,7 @@
   max-height: 40px;
   left: -7px;
   padding: 5px;
-  background-color: var(--bg-overlay-2);
+  background-color: var(--bg-mod-strong);
   border: none;
   border-radius: 12px;
 }
