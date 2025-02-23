@@ -1,0 +1,32 @@
+/* Change Some Icons using png */
+[aria-label="Notification Settings"] {
+    content: url(https://files.catbox.moe/4mucwd.png?size=256&quality=lossless);
+}
+
+[aria-label="Threads"] {
+    content: url(https://files.catbox.moe/tri3eu.png?size=256&quality=lossless);
+}
+
+[aria-label="Pinned Messages"] {
+    content: url(https://files.catbox.moe/822ruh.png?size=256&quality=lossless);
+}
+
+[aria-label="Hide Member List"] {
+    content: url(https://files.catbox.moe/ef7cmd.png?size=256&quality=lossless);
+}
+
+[aria-label="Vencord Toolbox"] {
+    content: url(https://files.catbox.moe/yeo9io.png?size=256&quality=lossless);
+}
+
+[aria-label="Inbox"] {
+    content: url(https://files.catbox.moe/q8xtsp.png?size=256&quality=lossless);
+}
+
+[aria-label="Help"] {
+    content: url(https://files.catbox.moe/qc9gel.png?size=256&quality=lossless);
+}
+
+[aria-label="New Group DM"] {
+    content: url(https://files.catbox.moe/23n8qk.png?size=256&quality=lossless);
+}
