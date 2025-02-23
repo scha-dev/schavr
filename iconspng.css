@@ -1,32 +1,32 @@
-/* Change Some Icons using png */
+/* Change Some Icons using PNG */
 [aria-label="Notification Settings"] {
-    content: url(https://files.catbox.moe/5iusye.png?size=256&quality=lossless);
+    content: url(https://raw.githubusercontent.com/scha-dev/schaicons/main/Notifications.png);
 }
 
 [aria-label="Threads"] {
-    content: url(https://files.catbox.moe/tri3eu.png?size=256&quality=lossless);
+    content: url(https://raw.githubusercontent.com/scha-dev/schaicons/main/Threads.png);
 }
 
 [aria-label="Pinned Messages"] {
-    content: url(https://files.catbox.moe/fbshbd.png?size=256&quality=lossless);
+    content: url(https://raw.githubusercontent.com/scha-dev/schaicons/main/Pinned.png);
 }
 
 [aria-label="Hide Member List"] {
-    content: url(https://files.catbox.moe/18lpsz.png?size=256&quality=lossless);
+    content: url(https://raw.githubusercontent.com/scha-dev/schaicons/main/Member%20List.png);
 }
 
 [aria-label="Vencord Toolbox"] {
-    content: url(https://files.catbox.moe/yeo9io.png?size=256&quality=lossless);
+    content: url(https://raw.githubusercontent.com/scha-dev/schaicons/main/Vencord.png);
 }
 
 [aria-label="Inbox"] {
-    content: url(https://files.catbox.moe/q8xtsp.png?size=256&quality=lossless);
+    content: url(https://raw.githubusercontent.com/scha-dev/schaicons/main/Inbox.png);
 }
 
 [aria-label="Help"] {
-    content: url(https://files.catbox.moe/qc9gel.png?size=256&quality=lossless);
+    content: url(https://raw.githubusercontent.com/scha-dev/schaicons/main/Help.png);
 }
 
 [aria-label="New Group DM"] {
-    content: url(https://files.catbox.moe/23n8qk.png?size=256&quality=lossless);
+    content: url(https://raw.githubusercontent.com/scha-dev/schaicons/main/Member.png);
 }
