@@ -1,4 +1,4 @@
-/* 🎭 FONT SETTINGS – SORA AOI 🎭 */
+/* FONT SETTINGS – SORA AOI */
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@420&display=swap');
 :root {
   --font-primary: "Sora", sans-serif;
@@ -7,7 +7,7 @@
   --font-code: "Sora", monospace;
 }
 
-/* 🔴 SOME CSS, CHANGE & FIX 🔴 */
+/* SOME CSS, CHANGE & FIX  */
 /* Server Name Tooltip – Allow full server name in one line */
 [class^=tooltip] {
     max-width: unset !important;
@@ -21,18 +21,6 @@
 /* SEARCH BAR */
 .icon_fea832.visible_fea832 {
     color: var(--text-2);
-}
-
-/* MOVE VENCORD TOOLBOX */
-.visual-refresh .toolbar__9293f .iconWrapper__9293f {
-  margin: 0;
-  order: -1;
-  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
-}
-
-.visual-refresh .toolbar__9293f .iconWrapper__9293f:hover {
-  transform: scale(1.1);
-  opacity: 0.8;
 }
 
 /* Role color on profile */
@@ -74,7 +62,7 @@
     opacity: 0.25;
 }
 
-/* QUICK SWITCHER FIXES */
+/* QUICK SEARCH FIXES */
 .layer_bc663c:has(.quickswitcher_ac6cb0) {
     justify-content: start;
 }
@@ -106,7 +94,7 @@
 }
 
 
-/* 🟠 CHANNEL LIST & MESSAGE ACTIONS 🟠 */
+/* CHANNEL LIST & MESSAGE ACTIONS */
 /* Reduce Channel List Spacing */
 [class="link__2ea32"] {
     padding-block: 2px;
@@ -127,13 +115,12 @@
   margin-left: 3px;
 }
 
-
-/* background coloyr button +server, discover, download */
+/* background colour button +server, discover, download */
 .circleIconButton__5bc7e {
   background-color: var(--bg-mod-strong);
 }
 
-/* 🟡 "READ ALL" BUTTON MODIFICATIONS 🟡 */
+/* "READ ALL" BUTTON MODIFICATIONS Credit: Blade04208 */
 /* Read All Button */
 .vc-ranb-button {
   margin: 0 18px;
@@ -173,7 +160,7 @@
 }
 
 
-/* PIN PAGE SWITCHER */
+/* PIN PAGE SWITCHER Credit: Suffocate*/
 [class^="container_"]:has([class^="pageControlContainer_"]) {
   position: sticky;
   bottom: 8px;
@@ -183,7 +170,7 @@
 }
 
 
-/* 📌 UI CLEANUP – REMOVE UNWANTED ELEMENTS 📌*/
+/* UI CLEANUP – REMOVE UNWANTED ELEMENTS */
 /* Remove unnecessary buttons */
 button[aria-label|="Send a gift"],
 button[aria-label|="Open GIF picker"],
@@ -252,8 +239,7 @@ div[aria-label*="Members"] > div > div[role="listitem"] {
     display: none;
 }
 
-
-/* 🏠 HOME ICON WITH TRANSITION EFFECT 🏠 */
+/* HOME ICON WITH TRANSITION EFFECT */
 [data-list-item-id="guildsnav___home"] {
    content: url(https://files.catbox.moe/gffkyd.png?size=256&quality=lossless);
    background-color: var(--bg-2);
@@ -266,3 +252,14 @@ div[aria-label*="Members"] > div > div[role="listitem"] {
    }
 }
 
+/* MOVE VENCORD TOOLBOX */
+.visual-refresh .toolbar__9293f .iconWrapper__9293f {
+  margin: 0;
+  order: -1;
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.visual-refresh .toolbar__9293f .iconWrapper__9293f:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
