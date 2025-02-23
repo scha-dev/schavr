@@ -251,3 +251,18 @@ div[aria-label*="Members"] > div > div[role="listitem"] {
 [aria-label*="Copy Message ID"] {
     display: none;
 }
+
+
+/* 🏠 HOME ICON WITH TRANSITION EFFECT 🏠 */
+[data-list-item-id="guildsnav___home"] {
+   content: url(https://files.catbox.moe/gffkyd.png?size=256&quality=lossless);
+   background-color: var(--bg-2);
+
+   &:hover {
+      content: url(https://files.catbox.moe/6le0ob.png?size=256&quality=lossless);
+      background-color: var(--accent-3);
+      transform: scale(1.1);
+      opacity: 0.9;
+   }
+}
+
