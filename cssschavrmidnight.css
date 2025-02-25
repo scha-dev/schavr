@@ -250,3 +250,24 @@ div[aria-label*="Members"] > div > div[role="listitem"] {
   transform: scale(1.1);
   opacity: 0.8;
 }
+
+/* HOME ICON WITH SMOOTH TRANSITION EFFECT */
+[data-list-item-id="guildsnav___home"] {
+   content: url(https://raw.githubusercontent.com/scha-dev/icnscha/main/newhomee.svg);
+   background-color: var(--bg-2);
+}
+
+[data-list-item-id="guildsnav___home"]:hover {
+   content: url(https://raw.githubusercontent.com/scha-dev/icnscha/main/newhome.svg);
+   background-color: var(--accent-3);
+}
+
+
+/* VENCORD TOOLBOX ICON */
+.vc-toolbox-btn,
+.vc-toolbox-icon {
+   content: url(https://raw.githubusercontent.com/scha-dev/schaicons/main/cat.svg);
+   right: 4px;
+}
+
+
