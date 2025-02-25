@@ -100,21 +100,6 @@
     padding-block: 2px;
 }
 
-/* CHANNEL OUTLINES & HIGHLIGHTED ICONS */
-#app-mount .containerDefault_c69b6d .selected_c69b6d .wrapper__2ea32 .link__2ea32 {
-  background: var(--bg-3);
-  border-radius: 5px;
-  margin-left: 5px;
-  transition: background 0.2s ease-in-out;
-}
-
-.unread__2ea32 {
-  width: 3px;
-  border-radius: 20px;
-  background-color: rgba(128, 211, 239, 0.657);
-  margin-left: 3px;
-}
-
 /* background colour button +server, discover, download */
 .circleIconButton__5bc7e {
   background-color: var(--bg-mod-strong);
