@@ -62,37 +62,6 @@
     opacity: 0.25;
 }
 
-/* QUICK SEARCH FIXES */
-.layer_bc663c:has(.quickswitcher_ac6cb0) {
-    justify-content: start;
-}
-.quickswitcher_ac6cb0 {
-    background: none;
-    padding: 0;
-}
-.quickswitcher_ac6cb0 .scroller_ac6cb0 {
-    margin: 0;
-    border-radius: 0 0 8px 8px;
-    scrollbar-width: none;
-    padding: 8px !important;
-}
-.quickswitcher_ac6cb0 .input_ac6cb0 {
-    height: 50px;
-}
-.quickswitcher_ac6cb0 .input_ac6cb0[value=""] {
-    border-radius: 8px;
-}
-.quickswitcher_ac6cb0 .input_ac6cb0:not([value=""]) {
-    border-radius: 8px 8px 0 0;
-}
-.quickswitcher_ac6cb0 .input_ac6cb0[value=""] + .scroller_ac6cb0,
-.quickswitcher_ac6cb0 .protip_ac6cb0 {
-    display: none;
-}
-.backdrop__1a911:has(+ .layer_bc663c .quickswitcher_ac6cb0) {
-    opacity: 0;
-}
-
 
 /* CHANNEL LIST & MESSAGE ACTIONS */
 /* Reduce Channel List Spacing */
