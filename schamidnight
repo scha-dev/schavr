@@ -110,16 +110,6 @@
 }
 
 
-/* PIN PAGE SWITCHER Credit: Suffocate*/
-[class^="container_"]:has([class^="pageControlContainer_"]) {
-  position: sticky;
-  bottom: 8px;
-  border-radius: 10px;
-  z-index: 999;
-  background: var(--bg-overlay-1, var(--background-secondary));
-}
-
-
 /* UI CLEANUP – REMOVE UNWANTED ELEMENTS */
 /* Remove unnecessary buttons */
 button[aria-label|="Send a gift"],
