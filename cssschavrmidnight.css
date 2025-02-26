@@ -70,7 +70,6 @@
 }
 
 
-
 /* "READ ALL" BUTTON MODIFICATIONS Credit: Blade04208 */
 /* Read All Button */
 .vc-ranb-button {
@@ -223,5 +222,5 @@ div[aria-label*="Members"] > div > div[role="listitem"] {
 
 /* background colour button +server, discover, download */
 .circleIconButton__5bc7e {
-  background-color: var(--bg-2);
+  background-color: var(--bg-3);
 }
