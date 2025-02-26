@@ -79,7 +79,7 @@
   max-height: 40px;
   left: -7px;
   padding: 5px;
-  background-color: var(--bg-mod-strong);
+  background-color: var(--bg-3);
   border: none;
   border-radius: 12px;
 }
@@ -204,7 +204,7 @@ div[aria-label*="Members"] > div > div[role="listitem"] {
 /* HOME ICON WITH SMOOTH TRANSITION EFFECT */
 [data-list-item-id="guildsnav___home"] {
    content: url(https://raw.githubusercontent.com/scha-dev/icnscha/main/newhomee.svg);
-   background-color: var(--bg-2);
+   background-color: var(--bg-3);
 }
 
 [data-list-item-id="guildsnav___home"]:hover {
