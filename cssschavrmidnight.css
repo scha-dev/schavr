@@ -221,4 +221,7 @@ div[aria-label*="Members"] > div > div[role="listitem"] {
    right: 4px;
 }
 
-
+/* background colour button +server, discover, download */
+.circleIconButton__5bc7e {
+  background-color: var(--bg-2);
+}
