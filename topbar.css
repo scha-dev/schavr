@@ -37,6 +37,7 @@
 	}
 	.recentsIcon_c99c29 .icon__9293f {
 		transition: color 0.15s ease-out;
+        color: hsl(0, 2%, 64%);
 		width: 24px;
 		height: 24px;
 	}
