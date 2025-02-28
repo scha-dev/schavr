@@ -72,21 +72,3 @@
 	}
 }
 
-/* Small User Panel */
-@property --small-user-panel {
-    syntax: 'on';
-    inherits: false;
-    initial-value: on;
-}
-
-@container root style(--small-user-panel: on) {
-    .visual-refresh {
-        .base_c48ade {
-            grid-template-areas:
-                'titleBar titleBar titleBar'
-                'guildsList notice notice'
-                'guildsList channelsList page'
-                'guildsList userPanel page';
-        }
-    }
-}
