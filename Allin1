@@ -1,0 +1,7 @@
+@import url('https://refact0r.github.io/midnight-discord/src/main.css');
+@import url('https://refact0r.github.io/midnight-discord/src/colors.css');
+@import url('https://scha-dev.github.io/schavr/topbaruserpanel.css');
+
+/* CUSTOM CSS */
+@import url('https://scha-dev.github.io/schavr/schamidnight.css');
+@import url("https://aushevahmad.github.io/awesome-css/modules/vc-membercount.css");
